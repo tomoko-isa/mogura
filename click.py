@@ -1,12 +1,12 @@
 def start_button_on_click(event):
     """開始ボタンをクリックされたときの処理"""  # --- (*1)
     # ボタンを無効化
-    #document.getElementById("start_button").disabled = True
+    document.getElementById("start_button").disabled = True
     # ゲーム状態の初期化
     game["turns"] = GAME_TURNS  # 残りのゲームターン数を初期化
     game["score"] = 0  # スコアを初期化
     # ゲームを開始
-    #next_turn()
+    next_turn()
 
 def canvas_on_click(event):
     """canvasをクリックした時の処理"""  # --- (*2)
