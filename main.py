@@ -11,7 +11,6 @@ info = document.getElementById("info")  # 情報表示用の要素を取得
 # Canvasの取得 --- (*3)
 canvas = document.getElementById("canvas")  # キャンバスを取得
 context = canvas.getContext("2d")  # 2D描画コンテキストを取得
-
 # ゲーム全体の流れを辞書型変数で管理 --- (*4)
 game = {
     "turns": GAME_TURNS,  # 残りのゲームターン数
@@ -20,7 +19,6 @@ game = {
     "my": 0,  # モグラy座標
     "hide": True,  # モグラが隠れているかどうか
 }
-
 
 def next_turn():
     """次のターンの処理を行う関数"""  # --- (*5)
